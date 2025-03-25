@@ -2,7 +2,10 @@
   "name": "@err/source",
   "version": "0.1.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "docs": "adr new",
+    "postdocs": "adr-log -i -d doc/adr"
+  },
   "private": true,
   "dependencies": {
     "@react-router/node": "^7.2.0",
