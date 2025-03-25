@@ -11,6 +11,9 @@
     },
     {
       "path": "./libs/shared-auth"
+    },
+    {
+      "path": "./libs/module-projects-core"
     }
   ]
 }

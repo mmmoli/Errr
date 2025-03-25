@@ -55,6 +55,9 @@
   ],
   "references": [
     {
+      "path": "../../libs/module-projects-core/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/shared-auth/tsconfig.lib.json"
     },
     {

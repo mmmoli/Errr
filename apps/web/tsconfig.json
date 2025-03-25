@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/module-projects-core"
+    },
+    {
       "path": "../../libs/shared-auth"
     },
     {

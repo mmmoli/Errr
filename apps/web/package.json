@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@err/shared-auth": "workspace:*",
-    "@err/shared-design-system": "workspace:*"
+    "@err/shared-design-system": "workspace:*",
+    "@err/module-projects-core": "workspace:*"
   }
 }

@@ -26,7 +26,11 @@
           "buildDepsName": "build-deps",
           "watchDepsName": "watch-deps"
         }
-      }
+      },
+      "exclude": [
+        "libs/module-projects-core/*",
+        "libs/module-projects-infa/*"
+      ]
     },
     {
       "plugin": "@nx/react/router-plugin",
@@ -52,11 +56,25 @@
         "buildDepsTargetName": "build-deps",
         "watchDepsTargetName": "watch-deps"
       }
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": [
+        "libs/module-projects-core/*",
+        "libs/module-projects-infa/*"
+      ],
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
     }
   ],
   "targetDefaults": {
     "test": {
       "dependsOn": [
+        "^build",
+        "^build",
         "^build",
         "^build",
         "^build",
