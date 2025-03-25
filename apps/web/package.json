@@ -11,6 +11,7 @@
     "name": "web"
   },
   "dependencies": {
+    "@err/shared-auth": "workspace:*",
     "@err/shared-design-system": "workspace:*"
   }
 }

@@ -32,13 +32,11 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  },
+  }
 );
 
-type ButtonProps =
-  & React.ComponentProps<"button">
-  & VariantProps<typeof buttonVariants>
-  & {
+type ButtonProps = React.ComponentProps<"button"> &
+  VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
   };
 
@@ -60,4 +58,4 @@ function Button({
   );
 }
 
-export { Button, ButtonProps, buttonVariants };
+export { Button, type ButtonProps, buttonVariants };

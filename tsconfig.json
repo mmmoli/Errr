@@ -8,6 +8,9 @@
     },
     {
       "path": "./libs/shared-design-system"
+    },
+    {
+      "path": "./libs/shared-auth"
     }
   ]
 }
