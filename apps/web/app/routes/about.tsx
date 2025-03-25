@@ -1,5 +1,6 @@
 import { Route } from "./+types/about";
 import { Button } from "@err/shared-design-system/button";
+import { msg } from "~shared/route-config";
 
 export function loader({}: Route.LoaderArgs) {
   return {
@@ -16,6 +17,7 @@ export default function AboutView({
         About
       </h1>
       <p>{message}</p>
+      <p>{msg}</p>
       <Button>Click me!</Button>
     </div>
   );

@@ -1,12 +1,15 @@
 import { auth } from "@err/shared-auth/server";
 import { Route } from "./+types/protected";
 import { redirect } from "react-router";
+import { AboutRoute } from "~shared/route-config";
+
+const aboutRoute = AboutRoute();
 
 export async function loader({ request: { headers } }: Route.LoaderArgs) {
   const session = await auth.api.getSession({
     headers,
   });
-  if (!session) return redirect("/");
+  if (!session) return redirect(aboutRoute.url);
   return { session };
 }
 

@@ -10,7 +10,13 @@
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "rootDirs": [".", "./.react-router/types"],
-    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
+    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "paths": {
+      "~shared/*": ["./app/shared/*"],
+      "~entities/*": ["./app/entities/*"],
+      "~features/*": ["./app/features/*"],
+      "~widgets/*": ["./app/widgets/*"]
+    }
   },
   "include": [
     "app/**/*.ts",
