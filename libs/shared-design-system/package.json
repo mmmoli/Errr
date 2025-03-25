@@ -3,13 +3,44 @@
   "version": "0.0.1",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
+  "scripts": {
+    "ui:add": "bunx --bun shadcn@latest add"
+  },
   "exports": {
+    "./button": "./src/lib/components/ui/button.tsx",
     ".": {
       "types": "./src/index.ts",
       "import": "./src/index.ts",
       "default": "./src/index.ts"
     },
+    "./utils": {
+      "types": "./src/lib/utils.ts",
+      "import": "./src/lib/utils.ts",
+      "default": "./src/lib/utils.ts"
+    },
     "./package.json": "./package.json",
     "./globals.css": "./src/globals.css"
+  },
+  "nx": {
+    "namedInputs": {
+      "default": [
+        "{projectRoot}/**/*"
+      ],
+      "production": [
+        "!{projectRoot}/**/*.spec.tsx"
+      ]
+    },
+    "targets": {
+      "ui:add": {
+        "cwd": "{projectRoot}",
+        "outputs": [],
+        "dependsOn": [
+          "build"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.2"
   }
 }

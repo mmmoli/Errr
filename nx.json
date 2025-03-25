@@ -1,10 +1,7 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
@@ -56,18 +53,13 @@
   ],
   "targetDefaults": {
     "test": {
-      "dependsOn": [
-        "^build",
-        "^build",
-        "^build",
-        "^build"
-      ]
+      "dependsOn": ["^build", "^build", "^build", "^build"]
     }
   },
   "generators": {
     "@nx/react": {
       "application": {
-        "babel": true,
+        "babel": false,
         "style": "tailwind",
         "linter": "none",
         "bundler": "vite"
@@ -76,6 +68,7 @@
         "style": "tailwind"
       },
       "library": {
+        "babel": false,
         "style": "tailwind",
         "linter": "none",
         "unitTestRunner": "vitest"
