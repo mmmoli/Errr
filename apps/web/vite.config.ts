@@ -2,6 +2,7 @@
 import { defineConfig } from "vite";
 import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
+import process from "node:process";
 
 export default defineConfig(() => ({
   root: __dirname,

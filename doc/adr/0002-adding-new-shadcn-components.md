@@ -3,8 +3,8 @@
 Date: 2025-03-25
 
 Add new components with:
-  
-```bash  
+
+```bash
 nx ui:add shared-design-system
 ```
 

@@ -15,6 +15,7 @@ test("renders loader data", async () => {
       },
       Component: () => {
         const loaderData = useLoaderData<LoaderData>();
+        // deno-lint-ignore no-explicit-any
         const View = route.default as any;
         return <View loaderData={loaderData} />;
       },
