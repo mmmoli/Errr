@@ -7,11 +7,14 @@ export function loader({}: Route.LoaderArgs) {
   };
 }
 
-export default function AboutComponent({
+export default function AboutView({
   loaderData: { message },
 }: Route.ComponentProps) {
   return (
-    <div className="bg-accent">
+    <div className="bg-accent p-4">
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl font-serif">
+        About
+      </h1>
       <p>{message}</p>
       <Button>Click me!</Button>
     </div>
