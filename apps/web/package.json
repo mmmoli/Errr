@@ -9,5 +9,8 @@
   "sideEffects": false,
   "nx": {
     "name": "web"
+  },
+  "dependencies": {
+    "@err/shared-design-system": "workspace:*"
   }
 }

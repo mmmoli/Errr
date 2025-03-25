@@ -46,5 +46,10 @@
     "app/**/*.spec.js",
     "app/**/*.test.jsx",
     "app/**/*.spec.jsx"
+  ],
+  "references": [
+    {
+      "path": "../../libs/shared-design-system/tsconfig.lib.json"
+    }
   ]
 }

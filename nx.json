@@ -57,6 +57,9 @@
   "targetDefaults": {
     "test": {
       "dependsOn": [
+        "^build",
+        "^build",
+        "^build",
         "^build"
       ]
     }
@@ -74,7 +77,8 @@
       },
       "library": {
         "style": "tailwind",
-        "linter": "none"
+        "linter": "none",
+        "unitTestRunner": "vitest"
       }
     }
   }

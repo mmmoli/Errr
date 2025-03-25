@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/shared-design-system"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {
