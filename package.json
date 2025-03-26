@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
+    "start:infra": "nx run-many -t dev --nx-bail --output-style=stream",
     "docs": "adr new",
     "postdocs": "adr-log -i -d doc/adr",
     "lint": "deno lint --fix",

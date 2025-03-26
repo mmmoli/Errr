@@ -14,5 +14,7 @@
     "./package.json": "./package.json",
     "./create-project": "./src/lib/infra/usecases/create-project.ts"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@err/shared-db": "workspace:*"
+  }
 }
