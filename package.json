@@ -1,6 +1,6 @@
 {
   "name": "@err/source",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "start:infra": "nx run-many -t dev --nx-bail --output-style=stream",
