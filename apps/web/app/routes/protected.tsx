@@ -1,4 +1,4 @@
-import { auth } from "@err/shared-auth/server";
+import { auth } from "@htch/shared-auth/server";
 import { Route } from "./+types/protected";
 import { redirect } from "react-router";
 import { AboutRoute } from "~shared/route-config";

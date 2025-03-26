@@ -1,5 +1,5 @@
 import { Route } from "./+types/about";
-import { Button } from "@err/shared-design-system/button";
+import { Button } from "@htch/shared-design-system/button";
 
 export function loader({}: Route.LoaderArgs) {
   return {

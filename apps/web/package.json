@@ -11,8 +11,8 @@
     "name": "web"
   },
   "dependencies": {
-    "@err/shared-auth": "workspace:*",
-    "@err/shared-design-system": "workspace:*",
-    "@err/module-projects-core": "workspace:*"
+    "@htch/shared-auth": "workspace:*",
+    "@htch/shared-design-system": "workspace:*",
+    "@htch/module-projects-core": "workspace:*"
   }
 }

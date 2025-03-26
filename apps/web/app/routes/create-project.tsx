@@ -1,8 +1,8 @@
 import { Form } from "react-router";
 import { Route } from "./+types/protected";
-import { Button } from "@err/shared-design-system/button";
-import { Input } from "@err/shared-design-system/input";
-import { createProjectUseCase } from "@err/module-projects-core/create-project";
+import { Button } from "@htch/shared-design-system/button";
+import { Input } from "@htch/shared-design-system/input";
+import { createProjectUseCase } from "@htch/module-projects-core/create-project";
 
 export async function action({ request }: Route.ActionArgs) {
   const formData = await request.formData();

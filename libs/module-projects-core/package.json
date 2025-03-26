@@ -1,5 +1,5 @@
 {
-  "name": "@err/module-projects-core",
+  "name": "@htch/module-projects-core",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -15,6 +15,6 @@
     "./create-project": "./src/lib/infra/usecases/create-project.ts"
   },
   "dependencies": {
-    "@err/shared-db": "workspace:*"
+    "@htch/shared-db": "workspace:*"
   }
 }

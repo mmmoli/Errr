@@ -1,5 +1,5 @@
 import { Route } from "./+types/api-auth";
-import { auth } from "@err/shared-auth/server";
+import { auth } from "@htch/shared-auth/server";
 
 export function loader({ request }: Route.LoaderArgs) {
   return auth.handler(request);

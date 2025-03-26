@@ -1,6 +1,6 @@
 import { Fail, Ok } from "rich-domain";
 import { ProjectRepoTrait, Project } from "../../domain/project/index.js";
-import { Db } from "@err/shared-db";
+import { Db } from "@htch/shared-db";
 
 export interface CreateProjectRepoDeps {
   db: Db;

@@ -1,5 +1,5 @@
 {
-  "name": "@err/shared-db",
+  "name": "@htch/shared-db",
   "version": "0.0.1",
   "private": true,
   "type": "module",

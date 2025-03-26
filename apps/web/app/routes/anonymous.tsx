@@ -1,4 +1,4 @@
-import { auth } from "@err/shared-auth/server";
+import { auth } from "@htch/shared-auth/server";
 import { Route } from "./+types/anonymous";
 import { data, Link } from "react-router";
 
