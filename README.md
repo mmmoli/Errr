@@ -16,13 +16,14 @@ This repo is my attempt to create a starter project with the basic tools I use r
 | Shadcn/ui + tailwind | Love it |
 | [rich-domain](https://github.com/4lessandrodev/rich-domain) | Love it |
 | [dotenvx](https://dotenvx.com/docs) | Love it |
+| Drizzle | Love it |
+| turso | Ok |
+
 
 ## Upcoming Tools to include
 
 | Tech/Service      | Opinion      |
 | ------------- | ------------- |
-| Drizzle | Love it |
-| turso/sqlite/postgres/supabase | Not sure yet |
 | r3f/babylon | Not sure yet |
 | Stripe | Ok (bit boring) |
 | Tauri | Excited |
