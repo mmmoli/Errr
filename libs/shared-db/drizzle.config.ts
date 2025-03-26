@@ -1,4 +1,5 @@
 import { defineConfig } from "drizzle-kit";
+import process from "node:process";
 
 const DATABASE_URL = process.env.DATABASE_URL;
 const AUTH_TOKEN = process.env.DATABASE_AUTH_TOKEN;

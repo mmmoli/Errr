@@ -1,1 +1,1 @@
-export * from './lib/shared-db.js';
+export * from "./lib/shared-db.js";
