@@ -15,6 +15,7 @@ This repo is my attempt to create a starter project with the basic tools I use r
 | better-auth | New to me (but looks great!) |
 | Shadcn/ui + tailwind | Love it |
 | [rich-domain](https://github.com/4lessandrodev/rich-domain) | Love it |
+| [dotenvx](https://dotenvx.com/docs) | Love it |
 
 ## Upcoming Tools to include
 
