@@ -10,13 +10,13 @@ export const createProjectRepo = (): ProjectRepoTrait => {
       if (buildResult.isFail())
         return Fail(`Failed to build Project: ${buildResult.error()}`);
       const project = buildResult.value();
-      return Ok(project, { id: id.value() });
+      return await Promise.resolve(Ok(project, { id: id.value() }));
     },
     save: async (project) => {
-      return Ok(project);
+      return await Promise.resolve(Ok(project));
     },
     delete: async (id) => {
-      return Ok(null, { id: id.value() });
+      return await Promise.resolve(Ok(null, { id: id.value() }));
     },
   };
 };

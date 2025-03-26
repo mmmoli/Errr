@@ -6,7 +6,7 @@ export class ProjectCreatedEvent extends EventHandler<Project> {
     super({ eventName: "ProjectCreated" });
   }
 
-  async dispatch(project: Project): Promise<void> {
+  dispatch(project: Project): void {
     const dto = project.toObject();
     console.log("dispatching event", dto);
     project.context().dispatchEvent(`Context:${this.params.eventName}`, dto);
