@@ -17,7 +17,7 @@ This repo is my attempt to create a starter project with the basic tools I use r
 | [rich-domain](https://github.com/4lessandrodev/rich-domain) | Love it |
 | [dotenvx](https://dotenvx.com/docs) | Love it |
 | Drizzle | Love it |
-| turso | Ok |
+| supabase | Ok |
 
 
 ## Upcoming Tools to include

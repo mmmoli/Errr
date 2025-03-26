@@ -2,18 +2,17 @@ import { defineConfig } from "drizzle-kit";
 import process from "node:process";
 
 const DATABASE_URL = process.env.DATABASE_URL;
-const AUTH_TOKEN = process.env.DATABASE_AUTH_TOKEN;
 
-if (!DATABASE_URL || !AUTH_TOKEN) {
+if (!DATABASE_URL) {
   throw new Error("Missing required environment variables");
 }
 
 export default defineConfig({
-  out: "./drizzle",
   schema: "./src/lib/schema/index.ts",
-  dialect: "turso",
+  // Put this in a place that's picked-up by supabase
+  out: "./supabase/migrations",
+  dialect: "postgresql",
   dbCredentials: {
     url: DATABASE_URL,
-    authToken: AUTH_TOKEN,
   },
 });

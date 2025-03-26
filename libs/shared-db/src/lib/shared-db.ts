@@ -1,18 +1,10 @@
-import { drizzle } from "drizzle-orm/libsql/web";
-import { envs } from "./envs.js";
-import * as schema from "./schema/index.js";
+import { drizzle } from "drizzle-orm/postgres-js";
+import postgres from "postgres";
+import { envs } from "./envs.ts";
+import * as schema from "./schema/index.ts";
 
-export const db = drizzle(
-  {
-    connection: {
-      url: envs.DATABASE_URL,
-      authToken: envs.DATABASE_AUTH_TOKEN,
-    },
-  },
-  {
-    schema,
-  }
-);
+const client = postgres(envs.DATABASE_URL);
+export const db = drizzle({ client, schema });
 
 export type Db = typeof db;
 export { schema };

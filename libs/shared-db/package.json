@@ -4,11 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "turso dev --db-file ./var/local.db -p 8082",
-    "push": "bunx drizzle-kit push",
+    "dev": "supabase start",
     "gen": "bunx drizzle-kit generate",
     "migrate": "bunx drizzle-kit migrate",
-    "studio": "bunx drizzle-kit studio"
+    "push": "bunx drizzle-kit push",
+    "stop": "supabase stop"
   },
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -21,8 +21,8 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@libsql/client": "^0.15.1",
-    "drizzle-orm": "^0.41.0"
+    "drizzle-orm": "^0.41.0",
+    "postgres": "^3.4.5"
   },
   "devDependencies": {
     "drizzle-kit": "^0.30.5"
