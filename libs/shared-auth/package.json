@@ -10,6 +10,6 @@
       "default": "./src/index.ts"
     },
     "./package.json": "./package.json",
-    "./server": "./src/lib/auth.server.ts"
+    "./server": "./src/lib/shared/auth.server.ts"
   }
 }
