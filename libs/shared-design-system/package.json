@@ -7,7 +7,10 @@
     "ui:add": "bunx --bun shadcn@latest add"
   },
   "exports": {
+    "./alert": "./src/lib/components/ui/alert.tsx",
     "./button": "./src/lib/components/ui/button.tsx",
+    "./input": "./src/lib/components/ui/input.tsx",
+    "./label": "./src/lib/components/ui/label.tsx",
     ".": {
       "types": "./src/index.ts",
       "import": "./src/index.ts",
@@ -38,6 +41,7 @@
     }
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.2"
   }
 }

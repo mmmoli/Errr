@@ -16,7 +16,6 @@ export default function AboutView({
         About
       </h1>
       <p>{message}</p>
-
       <Button>Click me!</Button>
     </div>
   );

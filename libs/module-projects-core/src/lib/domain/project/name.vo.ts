@@ -4,7 +4,7 @@ export interface ProjectNameProps {
   value: string;
 }
 
-export default class ProjectName extends ValueObject<ProjectNameProps> {
+export class ProjectName extends ValueObject<ProjectNameProps> {
   private constructor(props: ProjectNameProps) {
     super(props);
   }

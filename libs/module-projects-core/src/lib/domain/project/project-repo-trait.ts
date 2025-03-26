@@ -1,5 +1,5 @@
 import { Result, UID } from "rich-domain";
-import Project from "./project.ar.js";
+import { Project } from "./project.ar.js";
 
 export interface ProjectRepoTrait {
   fetchForId(id: UID): Promise<Result<Project, string, { id: string }>>;

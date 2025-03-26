@@ -1,6 +1,6 @@
 import { Combine, Fail, ID, IResult, UID } from "rich-domain";
-import ProjectName from "./name.vo.js";
-import Project from "./project.ar.js";
+import { ProjectName } from "./name.vo.js";
+import { Project } from "./project.ar.js";
 
 export class ProjectBuilder {
   protected id: UID = ID.create();

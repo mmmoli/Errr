@@ -1,6 +1,7 @@
 import { Form } from "react-router";
 import { Route } from "./+types/protected";
 import { Button } from "@err/shared-design-system/button";
+import { Input } from "@err/shared-design-system/input";
 import { createProjectUseCase } from "@err/module-projects-core/create-project";
 
 export async function action({ request }: Route.ActionArgs) {
@@ -24,8 +25,8 @@ export default function ProtectedRoute({}: Route.ComponentProps) {
     <div>
       <h1>Create Project Route</h1>
 
-      <Form>
-        <input type="text" name="name" />
+      <Form method="POST">
+        <Input type="text" name="name" />
         <Button type="submit">Submit</Button>
       </Form>
     </div>

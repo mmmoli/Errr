@@ -1,6 +1,6 @@
 import { Fail, type IUseCase, Ok, type Result } from "rich-domain";
 import { ProjectRepoTrait } from "../domain/project/project-repo-trait.js";
-import Project from "../domain/project/project.ar.js";
+import { Project } from "../domain/project/project.ar.js";
 
 export type CreateProjectUseCaseDeps = {
   projectRepo: ProjectRepoTrait;
