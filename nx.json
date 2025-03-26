@@ -1,10 +1,7 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
@@ -30,8 +27,7 @@
       "exclude": [
         "libs/module-projects-core/*",
         "libs/module-projects-infa/*",
-        "libs/shared-db/*",
-        "libs/shared-supabase/*"
+        "libs/shared-db/*"
       ]
     },
     {
@@ -64,8 +60,7 @@
       "include": [
         "libs/module-projects-core/*",
         "libs/module-projects-infa/*",
-        "libs/shared-db/*",
-        "libs/shared-supabase/*"
+        "libs/shared-db/*"
       ],
       "options": {
         "typecheck": {
