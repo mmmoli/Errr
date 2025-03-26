@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
@@ -24,7 +27,11 @@
           "watchDepsName": "watch-deps"
         }
       },
-      "exclude": ["libs/module-projects-core/*", "libs/module-projects-infa/*"]
+      "exclude": [
+        "libs/module-projects-core/*",
+        "libs/module-projects-infa/*",
+        "libs/shared-db/*"
+      ]
     },
     {
       "plugin": "@nx/react/router-plugin",
@@ -53,7 +60,11 @@
     },
     {
       "plugin": "@nx/js/typescript",
-      "include": ["libs/module-projects-core/*", "libs/module-projects-infa/*"],
+      "include": [
+        "libs/module-projects-core/*",
+        "libs/module-projects-infa/*",
+        "libs/shared-db/*"
+      ],
       "options": {
         "typecheck": {
           "targetName": "typecheck"
@@ -64,6 +75,7 @@
   "targetDefaults": {
     "test": {
       "dependsOn": [
+        "^build",
         "^build",
         "^build",
         "^build",
