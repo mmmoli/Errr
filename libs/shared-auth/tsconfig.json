@@ -3,6 +3,12 @@
   "include": [],
   "references": [
     {
+      "path": "../shared-design-system"
+    },
+    {
+      "path": "../shared-db"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {

@@ -40,5 +40,13 @@
     "src/**/*.jsx",
     "src/**/*.ts",
     "src/**/*.tsx"
+  ],
+  "references": [
+    {
+      "path": "../shared-design-system/tsconfig.lib.json"
+    },
+    {
+      "path": "../shared-db/tsconfig.lib.json"
+    }
   ]
 }

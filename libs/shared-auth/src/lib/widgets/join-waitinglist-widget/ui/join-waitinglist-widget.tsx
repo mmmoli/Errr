@@ -1,11 +1,20 @@
 import { FC } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@htch/shared-design-system/card";
 
 export const JoinWaitingListWidget: FC = () => {
   return (
-    <div className="w-full max-w-xl text-center">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl font-serif">
-        Join Waiting List
-      </h1>
-    </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>Join Waiting List</CardTitle>
+        <CardDescription>Deploy your new project in one-click.</CardDescription>
+      </CardHeader>
+      <CardContent></CardContent>
+    </Card>
   );
 };

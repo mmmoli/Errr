@@ -2,7 +2,9 @@
   "name": "@htch/shared-auth",
   "version": "0.0.1",
   "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "scripts": {
+    "gen": "bunx @better-auth/cli@latest generate --config ./src/lib/shared/auth.server.ts"
+  },
   "exports": {
     ".": {
       "types": "./src/index.ts",
@@ -11,5 +13,6 @@
     },
     "./package.json": "./package.json",
     "./server": "./src/lib/shared/auth.server.ts"
-  }
+  },
+  "types": "./src/index.ts"
 }
