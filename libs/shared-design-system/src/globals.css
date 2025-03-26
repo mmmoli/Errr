@@ -1,8 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@source "./lib/components/ui/button.tsx";
 @source "./lib/components/ui/alert.tsx";
+@source "./lib/components/ui/button.tsx";
+@source "./lib/components/ui/card.tsx";
 @source "./lib/components/ui/input.tsx";
 @source "./lib/components/ui/label.tsx";
 @source "./lib/components/ui/separator.tsx";

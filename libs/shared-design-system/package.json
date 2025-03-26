@@ -9,6 +9,7 @@
   "exports": {
     "./alert": "./src/lib/components/ui/alert.tsx",
     "./button": "./src/lib/components/ui/button.tsx",
+    "./card": "./src/lib/components/ui/card.tsx",
     "./input": "./src/lib/components/ui/input.tsx",
     "./label": "./src/lib/components/ui/label.tsx",
     "./separator": "./src/lib/components/ui/separator.tsx",
