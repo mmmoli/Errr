@@ -28,3 +28,9 @@ This repo is my attempt to create a starter project with the basic tools I use r
 | Hudini CSS | Excited |
 | Dockerfiles | Ok (bit boring) |
 | flyio | Ok (bit boring) |
+
+## Docs
+
+I'm keeping track of decisions too so I don't have to remember everything:
+
+[ADR Log](doc/adr/index.md)
