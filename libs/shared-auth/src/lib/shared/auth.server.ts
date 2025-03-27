@@ -10,5 +10,6 @@ export const auth = betterAuth({
   plugins: [anonymous()],
   database: drizzleAdapter(db, {
     provider: "pg",
+    usePlural: true,
   }),
 });
